@@ -1,0 +1,30 @@
+@use "../../styles/global" as *;
+
+.card {
+  position: relative;
+  display: flex;
+  width: 340px;
+  height: 340px;
+  border-radius: 10px;
+
+  &__image {
+    @include w100;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  &__title {
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    @include fs18;
+    @include fw700;
+  }
+}
+
+@include breakpoint {
+  .card {
+    width: 100%;
+    height: auto;
+  }
+}

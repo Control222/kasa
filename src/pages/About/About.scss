@@ -1,0 +1,11 @@
+@use "../../styles/global" as *;
+
+.about__main {
+  margin: 38px 100px;
+}
+
+.dropdown__container {
+  margin: 38px 108px;
+  @include flex-col;
+  gap: 30px;
+}

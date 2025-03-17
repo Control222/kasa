@@ -1,0 +1,52 @@
+@use "../../styles/global" as *;
+
+.description {
+  @include flex-SB;
+  margin-bottom: 24px;
+}
+
+.informations {
+  &__titre {
+    @include fs36;
+    color: $primary-color;
+  }
+  &__adresse {
+    @include fs18;
+  }
+}
+
+.rating-host {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.host {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  gap: 10px;
+  margin-bottom: 21px;
+
+  &__name {
+    color: $primary-color;
+    @include fs18;
+    @include fw500;
+    text-align: right;
+  }
+  &__image {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+  }
+}
+
+.dropdown-container {
+  @include flex-SB;
+  gap: 76px;
+}
+
+.dropdown-description,
+.dropdown-equipements {
+  flex: 1;
+  max-width: 50%;
+}

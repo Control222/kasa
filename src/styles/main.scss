@@ -1,0 +1,19 @@
+@use "./global" as *;
+@use "./base.scss" as *;
+
+@use "../components/Header/Header.scss" as *;
+@use "../components/Footer/Footer.scss" as *;
+@use "../components/Nav/Nav.scss" as *;
+@use "../components/Banner/Banner.scss" as *;
+@use "../components/Cards/Cards.scss" as *;
+@use "../components/Gallery/Gallery.scss" as *;
+@use "../components/AnnonceDetails/AnnonceDetails.scss" as *;
+@use "../components/Dropdown/Dropdown.scss" as *;
+@use "../components/Tags/Tags.scss" as *;
+@use "../components/Rating/Rating.scss" as *;
+@use "../components/Slider/Slider.scss" as *;
+
+@use "../pages/Home/Home.scss" as *;
+@use "../pages/Annonce/AnnonceLogement.scss" as *;
+@use "../pages/About/About.scss" as *;
+@use "../pages/Error/Error.scss" as *;

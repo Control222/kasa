@@ -1,0 +1,26 @@
+@use "../../styles/global" as *;
+
+.error {
+  @include flex-col;
+  @include just-align-center;
+  margin: 139px 0;
+  gap: 139px;
+
+  &__number {
+    font-size: 288px;
+    @include fw700;
+    color: $primary-color;
+  }
+
+  &__text {
+    color: $primary-color;
+    @include fs36;
+    @include fw500;
+  }
+
+  &__link {
+    @include fs18;
+    text-decoration: underline;
+    color: $black;
+  }
+}

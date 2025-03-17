@@ -1,0 +1,17 @@
+@use "../../styles/global" as *;
+
+.gallery {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: wrap;
+  row-gap: 50px;
+  padding: 50px 0;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+
+  @include breakpoint {
+    background-color: #ffffff;
+    row-gap: 1.25rem;
+    padding: 0;
+  }
+}

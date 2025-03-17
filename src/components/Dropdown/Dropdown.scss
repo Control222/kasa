@@ -1,0 +1,39 @@
+@use "../../styles/global" as *;
+
+.dropdown {
+  @include flex-col;
+
+  &__header {
+    background-color: $primary-color;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    @include flex-SB;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__title {
+    @include fw700;
+    @include fs18;
+    color: $white;
+  }
+
+  &__icon {
+    transition: transform 0.3s ease-in-out;
+    width: 24px;
+    height: 13.71px;
+    color: $white;
+  }
+
+  &__content {
+    background-color: #f6f6f673;
+    padding: 16px 20px 20px;
+    @include fs18;
+    font-weight: 400;
+  }
+}
+
+.rotate {
+  transform: rotate(180deg);
+}

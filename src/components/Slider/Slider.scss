@@ -1,0 +1,57 @@
+@use "../../styles/global" as *;
+
+.slider {
+  position: relative;
+  @include w100;
+  height: 415px;
+  margin-bottom: 30px;
+
+  &__image {
+    @include w100;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+
+    &.fade-in {
+      opacity: 1;
+    }
+  }
+
+  &__number {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: $white;
+    @include fs18;
+  }
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: opacity 0.3s ease-in-out;
+  color: $white;
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  & svg {
+    width: 47px;
+    height: 79px;
+  }
+}
+
+.arrow-left {
+  left: 20px;
+}
+
+.arrow-right {
+  right: 20px;
+}

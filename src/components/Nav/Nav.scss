@@ -1,0 +1,18 @@
+@use "../../styles/global" as *;
+
+.nav {
+  @include flex-SB;
+  align-items: center;
+  gap: 3.5rem;
+
+  &__link {
+    color: #000000;
+    text-decoration: none;
+    @include fw500;
+    @include fs24;
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+}
