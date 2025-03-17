@@ -6,6 +6,11 @@
   height: 415px;
   margin-bottom: 30px;
 
+  @include medium {
+    margin-bottom: 15px;
+    height: 255px;
+  }
+
   &__image {
     @include w100;
     height: 100%;

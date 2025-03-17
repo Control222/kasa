@@ -1,3 +1,9 @@
+@use "../../styles/global" as *;
+
 .annonce__main {
   margin: 50px 100px;
+
+  @include medium {
+    margin: 27px 20px;
+  }
 }

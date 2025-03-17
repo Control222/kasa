@@ -2,10 +2,20 @@
 
 .about__main {
   margin: 38px 100px;
+  max-width: 1300px;
+
+  @include medium {
+    margin: 20px;
+  }
 }
 
 .dropdown__container {
   margin: 38px 108px;
   @include flex-col;
   gap: 30px;
+
+  @include medium {
+    margin: 0px;
+    gap: 20px;
+  }
 }

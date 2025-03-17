@@ -3,12 +3,21 @@
 .description {
   @include flex-SB;
   margin-bottom: 24px;
+
+  @include medium {
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
 }
 
 .informations {
   &__titre {
     @include fs36;
     color: $primary-color;
+
+    @include medium {
+      margin-bottom: 5px;
+    }
   }
   &__adresse {
     @include fs18;
@@ -18,6 +27,17 @@
 .rating-host {
   display: flex;
   flex-direction: column-reverse;
+
+  @include medium {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+}
+
+.ratings {
+  display: flex;
+  @include just-align-center;
 }
 
 .host {
@@ -26,6 +46,11 @@
   width: 80%;
   gap: 10px;
   margin-bottom: 21px;
+
+  @include medium {
+    width: auto;
+    margin-bottom: 0;
+  }
 
   &__name {
     color: $primary-color;
@@ -43,10 +68,19 @@
 .dropdown-container {
   @include flex-SB;
   gap: 76px;
+
+  @include medium {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 .dropdown-description,
 .dropdown-equipements {
   flex: 1;
   max-width: 50%;
+
+  @include medium {
+    max-width: 100%;
+  }
 }

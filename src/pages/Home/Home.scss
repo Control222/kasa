@@ -5,7 +5,7 @@
   max-width: 1300px;
   padding: 0 50px;
 
-  @include breakpoint {
+  @include medium {
     margin: 27px auto;
     padding: 0 1.25rem;
   }

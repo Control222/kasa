@@ -7,13 +7,12 @@
   @include just-align-center;
   background-size: cover;
   background-position: center;
-  border-radius: 10px;
+  @include border10;
   position: relative;
-  margin-bottom: 43px;
 
   &::before {
     content: "";
-    border-radius: 10px;
+    @include border10;
     position: absolute;
     top: 0;
     left: 0;

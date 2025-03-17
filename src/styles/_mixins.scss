@@ -17,6 +17,12 @@
 
 // FONT-SIZE
 
+@mixin border10 {
+  border-radius: 0.625rem;
+}
+
+// FONT-SIZE
+
 @mixin fs18 {
   font-size: 1.125rem;
 }
@@ -45,8 +51,14 @@
 
 // BREAKPOINTS
 
-@mixin breakpoint {
-  @media (max-width: 768px) {
+@mixin medium {
+  @media (max-width: 790px) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media (max-width: 480px) {
     @content;
   }
 }
