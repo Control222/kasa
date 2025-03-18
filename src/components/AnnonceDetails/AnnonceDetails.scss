@@ -15,12 +15,17 @@
     @include fs36;
     color: $primary-color;
 
-    @include medium {
+    @include small {
       margin-bottom: 5px;
+      @include fs18;
     }
   }
   &__adresse {
     @include fs18;
+
+    @include small {
+      font-size: 0.875rem;
+    }
   }
 }
 
@@ -57,11 +62,21 @@
     @include fs18;
     @include fw500;
     text-align: right;
+
+    @include small {
+      font-size: 0.75rem;
+    }
   }
+
   &__image {
     width: 64px;
     height: 64px;
     border-radius: 50%;
+
+    @include small {
+      width: 32px;
+      height: 32px;
+    }
   }
 }
 

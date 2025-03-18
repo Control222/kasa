@@ -17,4 +17,8 @@
   @include fw700;
   @include border10;
   padding: 3px 10px;
+
+  @include small {
+    font-size: 0.625rem;
+  }
 }
