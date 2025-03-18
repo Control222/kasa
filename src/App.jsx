@@ -7,7 +7,7 @@ import Error from "./pages/Error/Error";
 function App() {
   console.log("App component loaded");
   return (
-    <Router>
+    <Router basename="/kasa">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
