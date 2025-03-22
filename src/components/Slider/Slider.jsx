@@ -10,7 +10,7 @@ import {
 export default function Slider({ images }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const totalImages = images.length;
-  // useMemo
+
   //   Previous
 
   const prevImage = () => {

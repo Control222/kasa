@@ -29,5 +29,9 @@
     @include fw700;
     position: relative;
     z-index: 1;
+
+    @include small {
+      padding-left: 16px;
+    }
   }
 }

@@ -7,7 +7,6 @@ import { useMemo } from "react";
 
 export default function Rating({ note }) {
   const fullStars = note;
-  // A REVOIR useMemo/useCallback (slider)
   const emptyStars = useMemo(() => {
     return 5 - fullStars;
   }, [fullStars]);

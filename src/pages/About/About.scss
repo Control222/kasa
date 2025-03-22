@@ -1,11 +1,13 @@
 @use "../../styles/global" as *;
 
 .about__main {
-  margin: 38px 100px;
+  margin: 38px auto;
   max-width: 1300px;
+  padding: 0 2rem;
 
   @include medium {
     margin: 20px;
+    padding: 0;
   }
 }
 
